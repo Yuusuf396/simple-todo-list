@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&family=Outfit:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* background:  #ffbb99; */
+    /* background: radial-gradient(circle, rgba(174,222,238,1) 0%, rgba(148,187,233,1) 100%); */
+
+    background: radial-gradient(circle, rgba(174,222,238,1) 0%, rgba(148,187,233,1) 100%);
+    
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.container{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #e6f2ff;
+    /* border-radius: 3vh; */
+       
+    font-family: 'Outfit', sans-serif ;
+    font-weight: 400;
+}
+#newtask{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    background: #e6f2ff;
+    border-radius: 3vh;
+    padding: 4rem;  
+    font-family: 'Outfit', sans-serif ;
+    font-weight: 400;   
+}
+#input_text{
+    width: 350px;
+    height:40px;
+}
+#button_add{
+    color: #ffbb99;
+}
+.span{
+    font-family: 'Outfit', sans-serif ;
+    font-size: 12px;
+}
+
+#tasks{
+    background-color: #e6f2ff;
+    padding: 30px 20px ;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    
+ 
+}
+.tasks button{
+    background-color:#00394d;
+    color: #ffffff;
+    width: 20px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 15px;
+    font-family: 'Outfit', sans-serif ;
+    font-size: 34px
+   
+   
+}
+.tasks span{
+     font-size: 15px;
+    font-family: 'Outfit', sans-serif ;
+}
+hr{
+ color:grey;   
+ margin-top: 10px;
+};
+ 
+.crossed{
+    text-decoration: line-through;
+
+}
+.completed{
+    text-decoration: line-through;
+}
+ 
