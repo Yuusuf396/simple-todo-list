@@ -28,6 +28,12 @@ add.onclick = function () {
             ` );
          
         tasks.innerHTML = localStorage.getItem('text');
+        
+       
+        inputText.value = '';
+    }
+};
+
 
         const deleteBtn = document.querySelectorAll(".delete");
         for (let i = 0; i < deleteBtn.length; i++) {
@@ -44,12 +50,6 @@ add.onclick = function () {
                 this.classList.toggle("completed")
             }
         }
-         
-       
-        inputText.value = '';
-    }
-};
-
 
 
 
