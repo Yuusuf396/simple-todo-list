@@ -6,6 +6,25 @@ const tasks = document.getElementById('tasks');
 
  
 tasks.innerHTML = localStorage.getItem('text');
+const deleteBtn = document.querySelectorAll(".delete");
+ 
+for (let i = 0; i < deleteBtn.length; i++) {
+    deleteBtn[i].addEventListener('click', function () {
+        this.parentNode.remove();
+        localStorage.removeItem('text');
+    })
+}
+ 
+
+const tasksCross = document.querySelectorAll('.tasks');
+for (let i = 0; i < tasksCross.length; i++) {
+    tasksCross[i].onclick = function () {
+        
+        this.classList.toggle("completed")
+    }
+}
+
+
 
 add.onclick = function () {
     if (inputText.value === '')
@@ -32,25 +51,23 @@ add.onclick = function () {
        
         inputText.value = '';
     }
+    
+    const deleteBtn = document.querySelectorAll(".delete");
+    for (let i = 0; i < deleteBtn.length; i++) {
+        deleteBtn[i].addEventListener('click', function () {
+            this.parentNode.remove();
+            localStorage.removeItem('text');
+        })
+    }
+    
+    const tasksCross = document.querySelectorAll('.tasks');
+    for (let i = 0; i < tasksCross.length; i++) {
+        tasksCross[i].onclick = function () {
+            
+            this.classList.toggle("completed")
+        }
+    }
 };
 
 
-        const deleteBtn = document.querySelectorAll(".delete");
-        for (let i = 0; i < deleteBtn.length; i++) {
-            deleteBtn[i].addEventListener('click', function () {
-                this.parentNode.remove();
-                localStorage.removeItem('text');
-            })
-        }
-        
-        const tasksCross = document.querySelectorAll('.tasks');
-        for (let i = 0; i < tasksCross.length; i++) {
-            tasksCross[i].onclick = function () {
-                
-                this.classList.toggle("completed")
-            }
-        }
-
-
-
-
+ 
